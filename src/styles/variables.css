@@ -1,0 +1,30 @@
+/* variables.css */
+:root {
+  /* Light Theme */
+  --background-primary: #ffffff;
+  --background-secondary: #f8f9fa;
+  --text-primary: #2d3748;
+  --text-secondary: #4a5568;
+  --accent-primary: #007bff;
+  --accent-hover: #0056b3;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --background-primary: #1a202c;
+  --background-secondary: #2d3748;
+  --text-primary: #e2e8f0;
+  --text-secondary: #a0aec0;
+  --accent-primary: #4da3ff;
+  --accent-hover: #2b6cb0;
+  --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* variables.css */
+@media (prefers-color-scheme: dark) {
+    :root {
+      --primary-color: #4da3ff;
+      --background-gradient: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    }
+  }

@@ -1,0 +1,32 @@
+/* globals.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    padding: 0 0rem;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    box-shadow: var(--shadow-light);
+  }
+
+  @media (max-width: 768px) {
+    .header__name {
+      font-size: 2rem;
+    }
+  
+    .header__title {
+      font-size: 1.2rem;
+    }
+  
+    .skill-bars {
+      padding: 1rem;
+    }
+  }

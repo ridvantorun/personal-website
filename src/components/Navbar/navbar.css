@@ -1,0 +1,114 @@
+/* Ana navbar container */
+/* Navbar.css */
+/* Navbar.css (Güncellenmiş) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--nav-bg);
+  box-shadow: var(--shadow);
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar-brand a {
+  color: var(--text-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--hover-color);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* Github ve Sign in arasındaki boşluk */
+}
+
+.github-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.github-link:hover {
+  color: var(--hover-color);
+}
+
+.signin-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signin-link:hover {
+  color: var(--hover-color);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: var(--icon-size);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--text-color);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  color: var(--hover-color);
+}
+
+/* Mobil menü için media query ekleyin */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+}
+
+/*Tema değişkenleri*/
+:root {
+  --nav-bg: #ffffff;
+  --text-color: #333;
+  --hover-color: #007bff;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --icon-size: 1.5rem;
+}
+
+[data-theme="dark"] {
+  --nav-bg: #1a202c;
+  --text-color: #e2e8f0;
+  --hover-color: #4da3ff;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo stilleri ekleyin */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+}
